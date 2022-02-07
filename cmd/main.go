@@ -1,11 +1,15 @@
 package main
 
 import (
-	sql "database/sql"
+	"database/sql"
+	"encoding/json"
+	"fmt"
+	"github.com/sergioch2006/aprendendo-go/infra/kafka"
 	repository2 "github.com/sergioch2006/aprendendo-go/infra/repository"
 	usecase2 "github.com/sergioch2006/aprendendo-go/usecase"
 	ckafka "github.com/confluentinc/confluent-kafka-go/kafka"
 	"log"
+	"github.com/go-sql-driver/mysql"
 )
 
 func main() {
